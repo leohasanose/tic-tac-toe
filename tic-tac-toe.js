@@ -4,32 +4,18 @@ var namespace = "http://www.w3.org/2000/svg"
 
 var turn = 1
 
-var one = document.createElementNS(namespace, "circle")
+function game(){
+  var yesorno = "unclicked"
+     document.getElementById("rect-one")
 
-one.setAttribute("cx", 10)
-one.setAttribute("cy", 10)
-one.setAttribute("r", 10)
-
-var two = document.createElementNS(namespace,"rect")
-
-two.setAttribute("x",10)
-two.setAttribute("y", 10)
-two.setAttribute("width", 30)
-two.setAttribute("height", 30)
-
-var canvas = document.getElementById("game-board")
-
-function gamePiece() {
-
-  if (turn == 1) {
-    canvas.appendChild(one)
-turn = 2
+if (turn == 1) {
+    "rect-one".setAttribute("fill","red")
+    turn = 2
+    yesorno = "clicked"
   } else if (turn == 2){
+    rect(1,1).setAttribute("fill","blue")
 
-canvas.appendChild(two)
-turn = 1
-
-
-  }
-
+     turn = 1
+     yesorno = "clicked"
+}
 }
