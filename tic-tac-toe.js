@@ -5,15 +5,34 @@ var namespace = "http://www.w3.org/2000/svg"
 var turn = 1
 
 function game(){
-  var yesorno = "unclicked"
-     document.getElementById("rect-one")
+
+  var yesorno = "no"
+  var rectone =  document.getElementById("rect-one")
+  var canvas = document.getElementById("game-board")
 
 if (turn == 1) {
-    "rect-one".setAttribute("fill","red")
+    rectone.setAttribute("fill","red")
+    turn = 2
+    yesorno = "yes"
+  } else if (turn == 2){
+    rectone.setAttribute("fill","blue")
+
+     turn = 1
+     yesorno = "yes"
+}
+}
+
+function game2(){
+  var yesorno = "unclicked"
+  var recttwo =  document.getElementById("rect-two")
+  var canvas = document.getElementById("game-board")
+
+if (turn == 1) {
+    recttwo.setAttribute("fill","red")
     turn = 2
     yesorno = "clicked"
   } else if (turn == 2){
-    rect(1,1).setAttribute("fill","blue")
+    recttwo.setAttribute("fill","blue")
 
      turn = 1
      yesorno = "clicked"
