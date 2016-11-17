@@ -8,13 +8,12 @@ function game(){
 
   var yesorno = "no"
   var rectone =  document.getElementById("rect-one")
-  var canvas = document.getElementById("game-board")
 
 if (turn == 1) {
-    rectone.setAttribute("fill","red")
+  rectone.setAttribute("fill","red")
     turn = 2
     yesorno = "yes"
-  } else if (turn == 2){
+  } else if (turn == 2)
     rectone.setAttribute("fill","blue")
 
      turn = 1
@@ -22,19 +21,14 @@ if (turn == 1) {
 }
 }
 
-function game2(){
-  var yesorno = "unclicked"
-  var recttwo =  document.getElementById("rect-two")
+function game2() {
   var canvas = document.getElementById("game-board")
-
-if (turn == 1) {
-    recttwo.setAttribute("fill","red")
-    turn = 2
-    yesorno = "clicked"
-  } else if (turn == 2){
-    recttwo.setAttribute("fill","blue")
-
-     turn = 1
-     yesorno = "clicked"
-}
+  if (turn == 1) {
+    var circle = document.createElementNS(namespace, "circle")
+    circle.setAttribute("cx", 45)
+    circle.setAttribute("cy", 45)
+    circle.setAttribute("r",40)
+    circle.setAttribute("fill", "magenta")
+    canvas.appendChild(circle)
+  }
 }
