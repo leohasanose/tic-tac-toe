@@ -5,31 +5,25 @@ var namespace = "http://www.w3.org/2000/svg"
 var turn = 1
 
 function game(){
+  var canvas = document.getElementById("game-board")
 
-  var yesorno = "no"
-  var rectone =  document.getElementById("rect-one")
+  if (turn == 1) {
+    var circle = document.createElementNS(namespace, "circle")
+    circle.setAttribute("cx", 45)
+    circle.setAttribute("cy", 45)
+    circle.setAttribute("r",40)
+    circle.setAttribute("fill", "magenta")
+    canvas.appendChild(circle)
+  turn = 2
 
-if (turn == 1) {
-  var canvas1 = document.getElementById("game-board")
-  var circle1 = document.createElementNS(namespace, "circle")
-  circle1.setAttribute("cx", 45)
-  circle1.setAttribute("cy", 45)
-  circle1.setAttribute("r",40)
-  circle1.setAttribute("fill", "magenta")
-
-  canvas1.appendChild(circle1)
-    turn = 2
-    yesorno = "yes"
-  } else if (turn == 2){
-    var circle2 = document.createElementNS(namespace, "circle")
-    circle2.setAttribute("cx", 45)
-    circle2.setAttribute("cy", 45)
-    circle2.setAttribute("r",40)
-    circle2.setAttribute("fill", "blue")
-    canvas1.appendChild(circle2)
-
-     turn = 1
-     yesorno = "yes"
+  } else if(turn == 2){
+    var circle3 = document.createElementNS(namespace, "circle")
+    circle3.setAttribute("cx", 45)
+    circle3.setAttribute("cy", 45)
+    circle3.setAttribute("r",40)
+    circle3.setAttribute("fill", "blue")
+    canvas.appendChild(circle3)
+  turn = 1
 }
 }
 
@@ -175,12 +169,34 @@ function game8(){
   canvas.appendChild(circle14)
   turn = 2
   }else if (turn == 2){
-  var circle14 = document.createElementNS(namespace, "circle")
-  circle14.setAttribute("cx", 265)
-  circle14.setAttribute("cy", 145)
-  circle14.setAttribute("r",40)
-  circle14.setAttribute("fill", "blue")
-  canvas.appendChild(circle14)
+  var circle15 = document.createElementNS(namespace, "circle")
+  circle15.setAttribute("cx", 265)
+  circle15.setAttribute("cy", 145)
+  circle15.setAttribute("r",40)
+  circle15.setAttribute("fill", "blue")
+  canvas.appendChild(circle15)
+  turn = 1
+  }
+}
+
+function game9(){
+
+  var canvas = document.getElementById("game-board")
+  if (turn == 1){
+  var circle16 = document.createElementNS(namespace, "circle")
+  circle16.setAttribute("cx", 265)
+  circle16.setAttribute("cy", 245)
+  circle16.setAttribute("r",40)
+  circle16.setAttribute("fill", "magenta")
+  canvas.appendChild(circle16)
+  turn = 2
+  }else if (turn == 2){
+  var circle17 = document.createElementNS(namespace, "circle")
+  circle17.setAttribute("cx", 265)
+  circle17.setAttribute("cy", 245)
+  circle17.setAttribute("r",40)
+  circle17.setAttribute("fill", "blue")
+  canvas.appendChild(circle17)
   turn = 1
   }
 }
