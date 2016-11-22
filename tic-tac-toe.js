@@ -12,7 +12,7 @@ function game(){
     circle.setAttribute("cx", 45)
     circle.setAttribute("cy", 45)
     circle.setAttribute("r",40)
-    circle.setAttribute("fill", "magenta")
+    circle.setAttribute("fill", "red")
     canvas.appendChild(circle)
   turn = 2
 
@@ -34,7 +34,7 @@ function game2() {
     circle.setAttribute("cx", 45)
     circle.setAttribute("cy", 145)
     circle.setAttribute("r",40)
-    circle.setAttribute("fill", "magenta")
+    circle.setAttribute("fill", "red")
     canvas.appendChild(circle)
 turn = 2
   } else if(turn == 2){
@@ -55,7 +55,7 @@ if (turn == 1){
   circle4.setAttribute("cx", 45)
   circle4.setAttribute("cy", 245)
   circle4.setAttribute("r",40)
-  circle4.setAttribute("fill", "magenta")
+  circle4.setAttribute("fill", "red")
   canvas.appendChild(circle4)
   turn = 2
 }else if (turn == 2){
@@ -77,7 +77,7 @@ function game4(){
   circle6.setAttribute("cx", 155)
   circle6.setAttribute("cy", 45)
   circle6.setAttribute("r",40)
-  circle6.setAttribute("fill", "magenta")
+  circle6.setAttribute("fill", "red")
   canvas.appendChild(circle6)
   turn = 2
   }else if (turn == 2){
@@ -99,7 +99,7 @@ function game5(){
   circle8.setAttribute("cx", 155)
   circle8.setAttribute("cy", 145)
   circle8.setAttribute("r",40)
-  circle8.setAttribute("fill", "magenta")
+  circle8.setAttribute("fill", "red")
   canvas.appendChild(circle8)
   turn = 2
   }else if (turn == 2){
@@ -121,7 +121,7 @@ function game6(){
   circle10.setAttribute("cx", 155)
   circle10.setAttribute("cy", 245)
   circle10.setAttribute("r",40)
-  circle10.setAttribute("fill", "magenta")
+  circle10.setAttribute("fill", "red")
   canvas.appendChild(circle10)
   turn = 2
   }else if (turn == 2){
@@ -143,7 +143,7 @@ function game7(){
   circle12.setAttribute("cx", 265)
   circle12.setAttribute("cy", 45)
   circle12.setAttribute("r",40)
-  circle12.setAttribute("fill", "magenta")
+  circle12.setAttribute("fill", "red")
   canvas.appendChild(circle12)
   turn = 2
   }else if (turn == 2){
@@ -165,7 +165,7 @@ function game8(){
   circle14.setAttribute("cx", 265)
   circle14.setAttribute("cy", 145)
   circle14.setAttribute("r",40)
-  circle14.setAttribute("fill", "magenta")
+  circle14.setAttribute("fill", "red")
   canvas.appendChild(circle14)
   turn = 2
   }else if (turn == 2){
@@ -187,7 +187,7 @@ function game9(){
   circle16.setAttribute("cx", 265)
   circle16.setAttribute("cy", 245)
   circle16.setAttribute("r",40)
-  circle16.setAttribute("fill", "magenta")
+  circle16.setAttribute("fill", "red")
   canvas.appendChild(circle16)
   turn = 2
   }else if (turn == 2){
